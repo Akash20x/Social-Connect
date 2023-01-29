@@ -9,7 +9,6 @@ import {
   PostSkeleton,
 } from "../../components";
 import { fetchFeedPosts } from "../../services";
-// Feed posts should contain only the posts of people that you follow. Will handle this after implementing follow feature
 const Feed = () => {
   const { displayName, photoURL, uid } = useSelector((state) => state.auth);
   const [showModal, setShowModal] = useState(false);
