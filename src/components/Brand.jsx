@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { constants } from "../helpers";
 
-const Brand = ({ full, logo, name, large, medium }) => {
+const Brand = ({large, medium }) => {
   return (
     <header>
       <Link to={"/feed"} className="flex justify-start items-center gap-2">
@@ -11,7 +11,7 @@ const Brand = ({ full, logo, name, large, medium }) => {
           alt="app logo"
           className={`${large ? "w-24 h-24" : "w-10 h-10"} ${
             medium ? "w-16 h-16" : "w-10 h-10"
-          } ${(full || logo) && "block"} ${name && "hidden"} `}
+          }`}
         />
         <span
           className={`font-satisfy font-bold hidden md:block text-transparent ${
