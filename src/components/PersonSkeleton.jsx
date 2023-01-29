@@ -6,7 +6,6 @@ const PersonSkeleton = () => {
       <div className="loading rounded-full w-10 h-10"></div>
       <div className="flex flex-grow justify-center items-start gap-2 flex-col">
         <div className=" h-2 w-3/4 loading rounded-md"></div>
-        <div className=" h-2 w-3/4 loading rounded-md"></div>
       </div>
     </div>
   );
