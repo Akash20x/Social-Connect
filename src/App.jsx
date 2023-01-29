@@ -98,16 +98,6 @@ function App() {
           }
         />
         <Route
-          path="bookmarks"
-          element={
-            <ProtectedRoute route={"/login"}>
-              <MainContainer>
-                <Bookmarks />
-              </MainContainer>
-            </ProtectedRoute>
-          }
-        />
-        <Route
           path="people"
           element={
             <MainContainer>
@@ -149,7 +139,6 @@ function App() {
             </MainContainer>
           }
         ></Route>
-        <Route path="invalid" element={<ErrorPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
