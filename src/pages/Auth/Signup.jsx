@@ -189,12 +189,6 @@ const Signup = () => {
         <div className="w-full h-[1px] bg-cta-dark/10 "></div>
         <div className="flex flex-col justify-center items-center gap-4">
           <h1 className="text-xl font-bold italic ">Existing User?</h1>
-          <p className="font-extrabold text-3xl  gap-x-4">
-            Continue{" "}
-            <span className="bg-gradient-to-r bg-clip-text text-transparent from-cta-dark to-accent-1">
-              Socializing!
-            </span>
-          </p>
           <Button
             type="button"
             onClick={() => navigate("/login")}
